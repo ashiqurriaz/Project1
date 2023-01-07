@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .header{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/view.jpg);
     min-height: 100vh;
@@ -107,7 +111,7 @@ nav .fa{
 
     .nav-links{
         position: absolute;
-        background: #728FCE ;
+        background: black ;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -144,14 +148,12 @@ nav .fa{
 
 .box{
     flex-basis: 32%;
-    border: 2px solid red;
+    border: 2px solid rgb(6, 6, 6);
     border-radius: 20px;
     padding-top: 25px;
     padding-bottom: 20px;
     margin: 5px 15px;
-    background: rgb(227,224,224)
-
-
+    background: black
 }
 
 .box img{
@@ -159,7 +161,7 @@ nav .fa{
     height: 300px;
     margin: auto;
     display: block;
-    border-radius: 30px;
+    border-radius: 50%;
    
 }
 
@@ -167,16 +169,19 @@ nav .fa{
     text-align: center;
     margin-top: 15px;
     padding: 10px;
+    color: white;
     font-size: 25px;
 }
 
 .box p{
     font-size: 20px;
+    color: white;
     text-align: center;
 }
 
 h1{
     font-size: 40px;
+   
     font-family: 'Lobster', cursive;
 }
 
@@ -185,10 +190,15 @@ h1{
     font-size: 15px;
     padding:10px;
     margin-top: 15px;
-   background-color: rgb(245, 180, 180)
+    border-radius: 20px;
+    cursor: pointer;
+   background-color: rgb(247, 190, 190);
+   transition: 0.5s;
+   
+}
 
-
-
+.order:hover{
+        background-color: white;
 }
 
 
@@ -216,25 +226,32 @@ h1{
 .contact-info{
 
     flex-basis: 31%;
-     text-align: center;
+     text-align: left;
 }
 
 h2{
 
-    margin-top: 10px;
+    margin-top: 30px;
+    color: #f44336;
 }
 p{
     margin-top: 10px;
 }
+
+.contact-info p i{
+   
+    margin-right: 15px;
+    font-size: 20px;
+}
 .map{
-    width: 1000px;
+    width: 700px;
     border-radius: 10px;
 }
 
 @media(max-width: 700px){
 
     .map{
-        width: 370px;
+        width: 510px;
     }
 }
 
